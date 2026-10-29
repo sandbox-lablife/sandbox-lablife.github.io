@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>連絡先｜sandbox-lablife</title>
+<meta name="description" content="sandbox-lablife への連絡先">
+<link rel="icon" type="image/png" sizes="32x32" href="icon-32.png">
+<link rel="icon" type="image/png" sizes="48x48" href="icon-48.png">
+<link rel="icon" type="image/png" sizes="192x192" href="icon-192.png">
+<link rel="apple-touch-icon" href="apple-touch-icon.png">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="wrap">
+<header class="top"><img src="icon-128.png" alt=""><div class="name">sandbox-lablife</div></header>
+<nav class="menu" aria-label="メニュー">
+<a href="index.html">ホーム</a>
+<a href="works.html">作品</a>
+<a href="report.html">不具合報告</a>
+<a href="contact.html" class="on">連絡先</a>
+</nav>
+<main>
+<h1>連絡先</h1>
+<p><a id="mail" href="#" rel="nofollow">メールを書く</a></p>
+<noscript><p class="note">メールのアドレスは JavaScript を有効にすると表示されます。</p></noscript>
+<p class="note">不具合やご意見は<a href="report.html">不具合報告のページ</a>のフォームへお願いします。メールにはお返事ができない場合があります。</p>
+<script>
+// メールのアドレスを、そのままの文字では置かず、表示するときに組み立てる(自動収集のプログラム対策。完全ではない)
+(function(){
+  var a=['sandboxlablife','gmail.com'].join('@');
+  var el=document.getElementById('mail');
+  el.href='mailto:'+a+'?subject='+encodeURIComponent('sandbox-lablife');
+  el.textContent=a;
+})();
+</script>
+</main>
+<footer>© sandbox-lablife</footer>
+</div>
+</body>
+</html>
